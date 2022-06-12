@@ -1,7 +1,6 @@
 {
   "name": "freelance_mgmt",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/b-hexsoul/freelance_mgmt/issues"
   },
-  "homepage": "https://github.com/b-hexsoul/freelance_mgmt#readme"
+  "homepage": "https://github.com/b-hexsoul/freelance_mgmt#readme",
+  "description": ""
 }
