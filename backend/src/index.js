@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const colors = require("colors");
 require("dotenv").config();
 const { graphqlHTTP } = require("express-graphql");
@@ -8,6 +9,7 @@ const port = process.env.PORT || 5000;
 
 const main = () => {
   const app = express();
+  app.use(cors());
   // connect to mongoDB
   connectDB();
   app.use(
