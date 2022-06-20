@@ -25,7 +25,7 @@ const ClientMutation = {
       id: { type: new GraphQLNonNull(GraphQLID) },
     },
     resolve(parent, args) {
-      return Client.findByIdAndRemove(args.id);
+      return Client.findByIdAndDelete(args.id);
     },
   },
 };
