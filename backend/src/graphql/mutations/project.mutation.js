@@ -55,9 +55,9 @@ const ProjectMutation = {
         type: new GraphQLEnumType({
           name: "ProjectStatusUpdate",
           values: {
-            NOT_STARTED: { value: "Not Started" },
-            IN_PROGRESS: { value: "In Progress" },
-            COMPLETED: { value: "Completed" },
+            new: { value: "Not Started" },
+            progress: { value: "In Progress" },
+            completed: { value: "Completed" },
           },
         }),
       },
