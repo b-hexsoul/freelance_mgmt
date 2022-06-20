@@ -1,4 +1,5 @@
 const Project = require("../../models/Project");
+const Client = require("../../models/Client");
 const { ClientType } = require("./client.schema");
 const {
   GraphQLObjectType,
@@ -37,7 +38,7 @@ const ProjectQuery = {
     args: { id: { type: GraphQLID } },
     resolve(parentValue, args) {
       // return our data here via mongodb, put mongodb fn
-      return Project.find({ id: args.id });
+      return Project.findById(args.id);
     },
   },
 };

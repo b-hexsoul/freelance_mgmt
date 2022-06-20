@@ -29,7 +29,7 @@ const ClientQuery = {
     args: { id: { type: GraphQLID } },
     resolve(parentValue, args) {
       // return our data here via mongodb, put mongodb fn
-      return Client.find({ id: args.id });
+      return Client.findById(args.id);
     },
   },
 };
